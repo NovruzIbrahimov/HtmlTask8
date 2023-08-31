@@ -1,0 +1,866 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding-top: 160px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header hissenin baslangici */
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo a{
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+}
+.menu a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 20px;
+    position: relative;
+}
+.menu a::before{
+    content: "";
+    bottom: -8px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e9004f;
+    transition: all .3s;
+}
+.menu a:hover::before{
+    width: 22px;
+}
+.menu i{
+    color: #ffffff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Header hissenin sonu */
+
+/* Home hissenin baslangici */
+
+.home-section{
+    width: 100%;
+    height: 1000px;
+    background-color: #000000;
+    background-image: url("../images/hero_02.jpg");
+    background-position: 70% 48%;
+    background-repeat: no-repeat;
+    background-size: 640px auto;
+}
+.top-slice{
+    padding: 100px 100px;
+}
+.top-slice h1{
+    font-size: 88px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+.top-slice a{
+    font-size: 16px;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #e9004f;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: inline-block;
+}
+.top-slice a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e9004f;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.7s;
+}
+.top-slice a:hover::before{
+   width: 100%;
+}
+.bottom-slice{
+    padding: 0 100px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.box, .box11, .box22{
+    width: 32%;
+    padding: 80px 40px;
+    background-color: #747474;
+}
+.box{
+    background-color: #e9004f;
+    cursor: pointer;
+}
+.box i{
+    font-size: 45px;
+    color: #ffffff;
+}
+.box h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 45px;
+}
+.box p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.box11{
+    background-color: #1f1a1a;
+    cursor: pointer;
+    transition: all .5s;
+}
+.box11 i{
+     font-size: 45px;
+     color: #e9004f;
+}
+.box11 h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 45px;
+}
+.box11 p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.box22{
+    background-color: #1f1a1a;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+}
+.box22::before{
+    content: "";
+    bottom: -20px;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #e9004f;
+}
+.box22::after{
+    content: "";
+    bottom: -20px;
+    right: -20px;
+    position: absolute;
+    width: 20px;
+    height: 70px;
+    background-color: #e9004f;
+}
+.box22 i{
+     font-size: 45px;
+     color: #e9004f;
+}
+.box22 h1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 45px;
+}
+.box22 p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+.box11:hover{
+    background-color: #e9004f;
+}
+
+.box11:hover i{
+    color: #ffffff;
+}
+.box22:hover{
+    background-color: #e9004f;
+}
+
+.box22:hover i{
+    color: #ffffff;
+}
+
+/* Home hissenin sonu */
+
+/* Services hissenin baslangici */
+
+.services-section{
+    width: 100%;
+    height: 700px;
+    background-color: #1a1414;
+}
+.top1-slice{
+    padding: 77px 100px;
+}
+.top1-slice h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.top1-slice p{
+    font-size: 17px;
+    font-weight: bold;
+    color: #e9004f;
+    margin-top: 25px;
+}
+.bottom1-slice{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box2{
+    width: 31%;
+    background-color: #1f1a1a;
+    margin: 10px;
+    transition: all .4s;
+    display: flex;
+}
+.box2 h1{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 35px;
+    transition: all .4s;
+}
+.icon1 i{
+    font-size: 75px;
+    margin-top: 12px;
+    display: inline-flex;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all .7s;
+}
+.box2:hover{
+    background-color: #e9004f;
+}
+.box2:hover h1{
+    margin-left: 15px;
+}
+.box2:hover i{
+    font-size: 75px;
+    opacity: 1;
+    color: #b1a9a9;
+}
+/* Services hissenin sonu */
+
+/* Works hissenin baslangici */
+
+.works-section{
+    width: 100%;
+    height: 800px;
+    background-color: #000000;
+}
+.top2-slice{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top2-left-text h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.top2-left-text p{
+    font-size: 17px;
+    font-weight: bold;
+    color: #e9004f;
+    margin-top: 25px;
+}
+.top2-right-text a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 32px;
+    border: 2px solid #e9004f;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: inline-block;
+}
+.top2-right-text a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e9004f;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.7s;
+}
+.top2-right-text a:hover::before{
+   width: 100%;
+}
+
+.bottom2-slice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box3{
+    width: 32%;
+    height: 430px;
+    position: relative;
+    transition: all .4s;
+    cursor: pointer;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #ffffff; 
+    width: 100%;
+    height: 100%;
+    transition: all .4s;
+    opacity:0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 200px;
+    text-align: center;
+  }
+  .box3:hover .overlay {
+    opacity: 1;
+  }
+  .box3:hover{
+    opacity: 1;
+    filter: none;
+    transform: scale(0.9);
+  }
+.box3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s;
+}
+.box3 img:hover{
+    transform: scale(1.3) ;
+}
+/* Works hissenin sonu */
+
+/* About hissenin baslangici */
+
+.about-section{
+    width: 100%;
+    height: 1140px;
+    background-color: #1a1414;
+}
+.top3-slice{
+    padding: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.top3-left-text h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.top3-left-text p{
+    font-size: 17px;
+    font-weight: bold;
+    color: #e9004f;
+    margin-top: 20px;
+}
+.top3-right-text p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #acacac;
+}
+.middle3-slice{
+    padding:  0 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.middle3-left-text{
+    width: 63%;
+    height: 500px;
+}
+.middle3-right-text{
+    width: 34%;
+}
+.box4{
+    width: 100%;
+    height: 589px;
+    cursor: pointer;
+    transition: all .4s;
+    background-image: url(../images/about_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.box4:hover{
+    opacity: 1;
+    filter: none;
+}
+.box4 h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
+}
+.box4 p{
+    font-size: 17px;
+    color: #ffffffcc;
+    padding: 0 0 0 30px;
+}
+.middle3-right-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box5{
+    width: 100%;
+    height: 279px;
+    cursor: pointer;
+    transition: all .4s;
+    background-image: url(../images/about_03\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.box5:hover{
+    opacity: 1;
+    filter: none;
+}
+.box5 h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box5 p{
+    font-size: 17px;
+    color: #ffffffcc;
+}
+.box6{
+    width: 100%;
+    height: 279px;
+    cursor: pointer;
+    transition: all .4s;
+    margin-top: 30px;
+    background-image: url(../images/about_01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.box6:hover{
+    opacity: 1;
+    filter: none;
+}
+.box6 h1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.box6 p{
+    font-size: 17px;
+    color: #ffffffcc; 
+}
+.bottom3-slice{
+    padding: 40px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box7{
+    margin: 10px;
+}
+.box7 h1{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.box7 p{
+    font-size: 17px;
+    line-height: 23px;
+    color: #acacac;
+    margin-top: 35px;
+}
+.box4{
+    padding: 500px 20px 20px 0;
+}
+.box5{
+    padding: 200px 20px 20px 20px;
+}
+.box6{
+    padding: 200px 20px 20px 20px;
+}
+/* About hissenin sonu */
+
+/* Client hissenin baslangici */
+
+.client-section{
+    width: 100%;
+    height: 1000px;
+    background-color: #1a1414;
+}
+.top4-slice{
+    padding: 100px 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.top4-left-slice{
+    width: 40%;
+    height: 500px;
+    position: relative;
+}
+.top4-left-slice img{
+    width: 100%;
+    
+}
+.top4-left-slice::before{
+    content: "";
+    bottom: -116px;
+    right: 0;
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    background-color: #e9004f;
+}
+.top4-left-slice::after{
+    content: "";
+    bottom: -116px;
+    right: -20px;
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: #e9004f;
+}
+.top4-right-slice{
+    width: 55%;
+    height: 500px;
+}
+.top4-right-slice .right-line{
+    width: 38px;
+    height: 2px;
+    border: none;
+    background-color: #e9004f;
+    margin-top: 40px;
+}
+.top4-right-slice h1{
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+.top4-right-slice p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #e9004f;
+    margin-top: 30px;
+}
+.top4-right-slice p.new{
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 44px;
+    color: #acacac;
+    margin-top: 55px;
+}
+.top4-right-slice h2{
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 35px;
+}
+.top4-right-slice .client-line{
+    width: 33px;
+    height: 2px;
+    border: none;
+    background-color: #acacac;
+    margin-top: 30px;
+}
+.bottom4-slice{
+    padding: 100px 90px;
+}
+.bottom4-photos{
+    padding: 40px 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+.bottom4-photos img{
+    vertical-align: middle;
+    display: inline-block;
+}
+/* Client hissenin sonu */
+
+/* Blog hissenin baslangici */
+
+.blog-section{
+    width: 100%;
+    height: 700px;
+    background-color: #1a1414;
+}
+.top5-slice{
+    text-align: center;
+}
+.top5-slice h1{
+    font-size: 49px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.top5-slice p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #e9004f;
+    margin-top: 20px;
+}
+.bottom5-slice{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.box8{
+    width: 33%;
+    height: 430px;
+    cursor: pointer;
+    transition: all .4s;
+    background-image: url(../images/01-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.box8:hover{
+    opacity: 1;
+    filter: none;
+    padding: 280px 0 40px 0;
+}
+.box9{
+    width: 33%;
+    height: 430px;
+    cursor: pointer;
+    transition: all .4s;
+    background-image: url(../images/03-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.box9:hover{
+    opacity: 1;
+    filter: none;
+    padding: 280px 0 40px 0;
+}
+.box10{
+    width: 33%;
+    height: 430px;
+    cursor: pointer;
+    transition: all .4s;
+    background-image: url(../images/05-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.box10:hover{
+    opacity: 1;
+    filter: none;
+    padding: 280px 0 40px 0;
+}
+.box8 {
+    text-align: center;
+    padding: 300px 0 20px 0;
+}
+.box9{
+    text-align: center;
+    padding: 300px 0 20px 0;
+}
+.box10{
+    text-align: center;
+    padding: 300px 0 20px 0;
+}
+.box8 h1{
+    font-size: 15px;
+    color: #ffffff;
+}
+.box8 p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.box9 h1{
+    font-size: 15px;
+    color: #ffffff;
+}
+.box9 p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 15px;
+}
+.box10 h1{
+    font-size: 15px;
+    color: #ffffff;
+}
+.box10 p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 15px;
+}
+/* Blog hissenin sonu */
+
+/* Contact hissenin baslangici */
+
+.contact-section{
+    width: 100%;
+    height: 400px;
+    background-color: #181616;
+}
+.top6-slice{
+    padding: 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top6-left i.fa-brands{
+    font-size: 20px;
+    color: #ffffff;
+    border: 2px solid #e9004f;
+    border-radius: 50%;
+    padding: 12px;
+    margin: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.top6-left i:hover{
+    margin-bottom: 20px;
+}
+.top6-center h1{
+    font-size: 50px;
+    color: #ffffff;
+}
+.top6-right a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 18px 38px;
+    border: 2px solid #e9004f;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.top6-right a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e9004f;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.7s;
+}
+.top6-right a:hover::before{
+   width: 100%;
+}
+.bottom6-slice{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom6-left p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+.bottom6-left p:hover{
+    color: #e9004f;
+}
+.bottom6-right p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+.bottom6-right p:hover{
+    color: #e9004f;
+}
+/* Contact hissenin sonu */
+
+/* Footer hissenin baslangici */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left p{
+    font-size: 15px;
+    color: #ffffff;
+}
+.footer-right a{
+    color: #ffffff;
+    margin: 8px;
+    position: relative;
+    transition: all .3s;
+}
+.footer-right a:hover{
+    color: #e9004f;
+}
+.footer-right a::before{
+    content: "";
+    bottom: -8px;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #e9004f;
+    transition: all .3s;
+}
+.footer-right a:hover::before{
+    width: 60px;
+}
+.footer-left strong{
+    color: #e9004f;
+}
+/* Footer hissenin sonu */
